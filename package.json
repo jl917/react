@@ -88,13 +88,14 @@
     "@mattiasbuelens/web-streams-polyfill": "0.1.0"
   },
   "devEngines": {
-    "node": "8.x || 9.x || 10.x || 11.x"
+    "node": "8.x || 9.x || 10.x || 11.x || 12.x || 13.x || 14.x || 16.x"
   },
   "jest": {
     "testRegex": "/scripts/jest/dont-run-jest-directly\\.js$"
   },
   "scripts": {
     "build": "node ./scripts/rollup/build.js",
+    "b": "node ./scripts/rollup/build.js react/index,react/jsx,react-dom/index,scheduler --type=NODE_DEV",
     "linc": "node ./scripts/tasks/linc.js",
     "lint": "node ./scripts/tasks/eslint.js",
     "lint-build": "node ./scripts/rollup/validate/index.js",
