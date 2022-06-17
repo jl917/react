@@ -11,7 +11,7 @@ import { useState } from "react";
 // }
 
 function App() {
-  const len = 3000;
+  const len = 30000;
   return (
     <ul>
       {Array(len).fill(0).map((_, i) => <li>{i}</li>)}
