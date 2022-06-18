@@ -1,17 +1,10 @@
-import { startTransition, useDeferredValue, useState } from "react";
-
-const Item = ({text}) => {
-  const a = useDeferredValue(text);
-  return <li>{a}</li>
-}
-
 function App() {
-  const len = 30;
+  const len = 30000;
   
   return (
     <>
       <ul>
-        {Array(len).fill(0).map((_, i) => <Item text={i} />)}
+        {Array(len).fill(0).map((_, i) => <li>{i}</li>)}
       </ul>
     </>
   );
